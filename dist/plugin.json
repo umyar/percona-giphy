@@ -1,0 +1,22 @@
+{
+  "type": "panel",
+  "name": "Gif Plugin",
+  "id": "gif-plugin-grafana",
+  "info": {
+    "description": "Panel Plugin for gifs",
+    "author": {
+      "name": "Umyar",
+      "url": ""
+    },
+    "keywords": [ ],
+    "logos": { },
+    "links": [ ],
+    "screenshots": [ ],
+    "version": "0.0.1",
+    "updated": "07.03.2020"
+  },
+  "dependencies": {
+    "grafanaVersion": "6.6.2",
+    "plugins": [ ]
+  }
+}

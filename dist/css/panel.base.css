@@ -1,0 +1,21 @@
+button {
+  color: black; }
+
+button:disabled {
+  color: lightgray; }
+
+.gifs {
+  margin: 10px 0; }
+
+.gifs-list {
+  display: flex;
+  overflow: scroll;
+  list-style-type: none; }
+
+.error {
+  display: inline;
+  padding: 5px;
+  border: red 1px solid;
+  color: red; }
+
+/*# sourceMappingURL=panel.base.css.map*/

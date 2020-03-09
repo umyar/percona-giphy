@@ -1,0 +1,20 @@
+<div class="panel">
+  <div class="search-bar">
+    <input ng-model="searchString" ng-disabled="fetching" type="text" placeholder="Type some gif name">
+    <button ng-click="fetchGifs(searchString)" ng-disabled="fetching">Fetch gifs</button>
+  </div>
+  <div class="gifs">
+    <div ng-if="fetching" class="fetching">
+      Fetching gifs . . .
+    </div>
+    <ul ng-if="gifs.length && !fetching && !error" class="gifs-list">
+      <li ng-repeat="gif in gifs">
+        <img height="200" src="{{gif.images.fixed_height.url}}">
+      </li>
+    </ul>
+    <div ng-if="error" class="error">
+      <span>Error: </span>
+      {{error}}
+    </div>
+  </div>
+</div>
